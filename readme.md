@@ -1,4 +1,4 @@
-# RC433 avec ESP32
+# RF433 avec ESP32
 
 ## Aperçu
 Ce projet utilise un ESP32 pour se connecter à un réseau Wi-Fi, communiquer via MQTT, et transmettre des signaux RF 433 MHz afin d'émuler une télécommande connectée. Une LED RGB est utilisée pour fournir un retour visuel sur l'état de la connexion Wi-Fi, de MQTT et des transmissions RF.
