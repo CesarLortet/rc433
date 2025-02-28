@@ -10,11 +10,11 @@ RCSwitch mySwitchT = RCSwitch();
 #define RXD2 13 // Transmitter
 
 //**** WIFI ****/
-const char* ssid = "SFR_B148";
-const char* password = "8jjt66btzf3ibw23hsbm";
+const char* ssid = "your_ssid";
+const char* password = "your_password";
 
 //**** MQTT ****/
-const char* mqtt_server = "192.168.1.20";
+const char* mqtt_server = "127.0.0.1";
 
 //**** VARS ****/
 WiFiClient espClient;
@@ -154,3 +154,6 @@ void connect_to_wifi()
   Serial.println(WiFi.localIP());
   cRGBLedLib::instance()->displayColor(COLOR_BLACK);
 }
+
+
+// python3 /home/user/snap/arduino/85/.arduino15/packages/esp32/tools/esptool_py/4.6/esptool.py -p /dev/ttyUSB0 -b 115200 --before default_reset --after hard_reset --chip esp32  write_flash --flash_mode dio --flash_size detect --flash_freq 40m 0x10000 /home/user/Downloads/esp32-test-firmware.factory.bin
